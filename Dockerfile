@@ -3,17 +3,14 @@ FROM eclipse-temurin:21-jdk AS build
 
 WORKDIR /app
 
-# Copia apenas arquivos necessários para resolver dependências
+RUN apt-get update && apt-get install -y maven
+
 COPY pom.xml .
-COPY mvnw .
-COPY .mvn .mvn
+RUN mvn -B dependency:go-offline
 
-RUN ./mvnw -B dependency:go-offline
-
-# Copia o restante do código
 COPY src src
 
-RUN ./mvnw -B clean package -DskipTests
+RUN mvn -B clean package -DskipTests
 
 
 # ===== STAGE 2: RUNTIME =====
