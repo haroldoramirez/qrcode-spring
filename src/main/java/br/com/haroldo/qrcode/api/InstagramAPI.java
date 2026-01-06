@@ -26,7 +26,7 @@ import java.util.Map;
 public class InstagramAPI {
 
     // Controle de horario
-    private static final LocalTime INICIO_JORNADA = LocalTime.of(7, 0);
+    private static final LocalTime INICIO_JORNADA = LocalTime.of(1, 0);
     private static final LocalTime FIM_JORNADA = LocalTime.of(23, 0);
 
     private final AutomaticCounter automaticCounter;
