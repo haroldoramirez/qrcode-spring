@@ -20,6 +20,6 @@ WORKDIR /app
 
 EXPOSE 8080
 
-COPY --from=build /app/target/registros-1.0.0-SNAPSHOT.jar app.jar
+COPY --from=build /app/target/qrcode-spring-1.0.0-SNAPSHOT.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
