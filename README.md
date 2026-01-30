@@ -40,4 +40,4 @@ The Spring responds: Index Page!
 
 ## Informações Adicionais
 
-N/A
+Próximos passos integrar com as Secrets/Tokens do Instagram
