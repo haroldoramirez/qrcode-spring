@@ -20,7 +20,7 @@ mvn -version
 If you do not have the required versions, follow these links to obtain them:
 
 * [Java SE](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html)
-* [maven](https://maven.apache.org/download.cgi)
+* [Maven](https://maven.apache.org/download.cgi)
 
 ## Build and run the project
 
