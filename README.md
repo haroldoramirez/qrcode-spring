@@ -1,4 +1,4 @@
-# Social Media Integration API with Spring
+# Instagram Integration API with Spring
 
 To follow the steps in this tutorial, you will need the correct version of Java and sbt. The tutorial requires:
 
